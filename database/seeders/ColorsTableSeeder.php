@@ -1,0 +1,203 @@
+<?php
+
+namespace Database\Seeders;
+
+use DB;
+use Illuminate\Database\Seeder;
+
+class ColorsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     * the cities is large, we need to break it in parts
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('colors')->delete();
+        $colors = array(
+            array('type' => "bg",'color' => 'bg-white'),
+            array('type' => "bg",'color' => 'bg-dark'),
+            
+            array('type' => "bg",'color' => 'bg-gray-50'),
+            array('type' => "bg",'color' => 'bg-gray-100'),
+            array('type' => "bg",'color' => 'bg-gray-200'),
+            array('type' => "bg",'color' => 'bg-gray-300'),
+            array('type' => "bg",'color' => 'bg-gray-400'),
+            array('type' => "bg",'color' => 'bg-gray-500'),
+            array('type' => "bg",'color' => 'bg-gray-600'),
+            array('type' => "bg",'color' => 'bg-gray-700'),
+            array('type' => "bg",'color' => 'bg-gray-800'),
+            array('type' => "bg",'color' => 'bg-gray-900'),
+            
+            array('type' => "bg",'color' => 'bg-red-50'),
+            array('type' => "bg",'color' => 'bg-red-100'),
+            array('type' => "bg",'color' => 'bg-red-200'),
+            array('type' => "bg",'color' => 'bg-red-300'),
+            array('type' => "bg",'color' => 'bg-red-400'),
+            array('type' => "bg",'color' => 'bg-red-500'),
+            array('type' => "bg",'color' => 'bg-red-600'),
+            array('type' => "bg",'color' => 'bg-red-700'),
+            array('type' => "bg",'color' => 'bg-red-800'),
+            array('type' => "bg",'color' => 'bg-red-900'),
+            
+            array('type' => "bg",'color' => 'bg-yellow-50'),
+            array('type' => "bg",'color' => 'bg-yellow-100'),
+            array('type' => "bg",'color' => 'bg-yellow-200'),
+            array('type' => "bg",'color' => 'bg-yellow-300'),
+            array('type' => "bg",'color' => 'bg-yellow-400'),
+            array('type' => "bg",'color' => 'bg-yellow-500'),
+            array('type' => "bg",'color' => 'bg-yellow-600'),
+            array('type' => "bg",'color' => 'bg-yellow-700'),
+            array('type' => "bg",'color' => 'bg-yellow-800'),
+            array('type' => "bg",'color' => 'bg-yellow-900'),
+            
+            array('type' => "bg",'color' => 'bg-green-50'),
+            array('type' => "bg",'color' => 'bg-green-100'),
+            array('type' => "bg",'color' => 'bg-green-200'),
+            array('type' => "bg",'color' => 'bg-green-300'),
+            array('type' => "bg",'color' => 'bg-green-400'),
+            array('type' => "bg",'color' => 'bg-green-500'),
+            array('type' => "bg",'color' => 'bg-green-600'),
+            array('type' => "bg",'color' => 'bg-green-700'),
+            array('type' => "bg",'color' => 'bg-green-800'),
+            array('type' => "bg",'color' => 'bg-green-900'),
+            
+            array('type' => "bg",'color' => 'bg-blue-50'),
+            array('type' => "bg",'color' => 'bg-blue-100'),
+            array('type' => "bg",'color' => 'bg-blue-200'),
+            array('type' => "bg",'color' => 'bg-blue-300'),
+            array('type' => "bg",'color' => 'bg-blue-400'),
+            array('type' => "bg",'color' => 'bg-blue-500'),
+            array('type' => "bg",'color' => 'bg-blue-600'),
+            array('type' => "bg",'color' => 'bg-blue-700'),
+            array('type' => "bg",'color' => 'bg-blue-800'),
+            array('type' => "bg",'color' => 'bg-blue-900'),
+            
+            array('type' => "bg",'color' => 'bg-indigo-50'),
+            array('type' => "bg",'color' => 'bg-indigo-100'),
+            array('type' => "bg",'color' => 'bg-indigo-200'),
+            array('type' => "bg",'color' => 'bg-indigo-300'),
+            array('type' => "bg",'color' => 'bg-indigo-400'),
+            array('type' => "bg",'color' => 'bg-indigo-500'),
+            array('type' => "bg",'color' => 'bg-indigo-600'),
+            array('type' => "bg",'color' => 'bg-indigo-700'),
+            array('type' => "bg",'color' => 'bg-indigo-800'),
+            array('type' => "bg",'color' => 'bg-indigo-900'),
+            
+            array('type' => "bg",'color' => 'bg-purple-50'),
+            array('type' => "bg",'color' => 'bg-purple-100'),
+            array('type' => "bg",'color' => 'bg-purple-200'),
+            array('type' => "bg",'color' => 'bg-purple-300'),
+            array('type' => "bg",'color' => 'bg-purple-400'),
+            array('type' => "bg",'color' => 'bg-purple-500'),
+            array('type' => "bg",'color' => 'bg-purple-600'),
+            array('type' => "bg",'color' => 'bg-purple-700'),
+            array('type' => "bg",'color' => 'bg-purple-800'),
+            array('type' => "bg",'color' => 'bg-purple-900'),
+            
+            array('type' => "bg",'color' => 'bg-pink-50'),
+            array('type' => "bg",'color' => 'bg-pink-100'),
+            array('type' => "bg",'color' => 'bg-pink-200'),
+            array('type' => "bg",'color' => 'bg-pink-300'),
+            array('type' => "bg",'color' => 'bg-pink-400'),
+            array('type' => "bg",'color' => 'bg-pink-500'),
+            array('type' => "bg",'color' => 'bg-pink-600'),
+            array('type' => "bg",'color' => 'bg-pink-700'),
+            array('type' => "bg",'color' => 'bg-pink-800'),
+            array('type' => "bg",'color' => 'bg-pink-900'),
+            
+            array('type' => "text",'color' => 'text-white'),
+            array('type' => "text",'color' => 'text-dark'),
+            
+            array('type' => "text",'color' => 'text-gray-50'),
+            array('type' => "text",'color' => 'text-gray-100'),
+            array('type' => "text",'color' => 'text-gray-200'),
+            array('type' => "text",'color' => 'text-gray-300'),
+            array('type' => "text",'color' => 'text-gray-400'),
+            array('type' => "text",'color' => 'text-gray-500'),
+            array('type' => "text",'color' => 'text-gray-600'),
+            array('type' => "text",'color' => 'text-gray-700'),
+            array('type' => "text",'color' => 'text-gray-800'),
+            array('type' => "text",'color' => 'text-gray-900'),
+            
+            array('type' => "text",'color' => 'text-red-50'),
+            array('type' => "text",'color' => 'text-red-100'),
+            array('type' => "text",'color' => 'text-red-200'),
+            array('type' => "text",'color' => 'text-red-300'),
+            array('type' => "text",'color' => 'text-red-400'),
+            array('type' => "text",'color' => 'text-red-500'),
+            array('type' => "text",'color' => 'text-red-600'),
+            array('type' => "text",'color' => 'text-red-700'),
+            array('type' => "text",'color' => 'text-red-800'),
+            array('type' => "text",'color' => 'text-red-900'),
+            
+            array('type' => "text",'color' => 'text-yellow-50'),
+            array('type' => "text",'color' => 'text-yellow-100'),
+            array('type' => "text",'color' => 'text-yellow-200'),
+            array('type' => "text",'color' => 'text-yellow-300'),
+            array('type' => "text",'color' => 'text-yellow-400'),
+            array('type' => "text",'color' => 'text-yellow-500'),
+            array('type' => "text",'color' => 'text-yellow-600'),
+            array('type' => "text",'color' => 'text-yellow-700'),
+            array('type' => "text",'color' => 'text-yellow-800'),
+            array('type' => "text",'color' => 'text-yellow-900'),
+            
+            array('type' => "text",'color' => 'text-green-50'),
+            array('type' => "text",'color' => 'text-green-100'),
+            array('type' => "text",'color' => 'text-green-200'),
+            array('type' => "text",'color' => 'text-green-300'),
+            array('type' => "text",'color' => 'text-green-400'),
+            array('type' => "text",'color' => 'text-green-500'),
+            array('type' => "text",'color' => 'text-green-600'),
+            array('type' => "text",'color' => 'text-green-700'),
+            array('type' => "text",'color' => 'text-green-800'),
+            array('type' => "text",'color' => 'text-green-900'),
+            
+            array('type' => "text",'color' => 'text-blue-50'),
+            array('type' => "text",'color' => 'text-blue-100'),
+            array('type' => "text",'color' => 'text-blue-200'),
+            array('type' => "text",'color' => 'text-blue-300'),
+            array('type' => "text",'color' => 'text-blue-400'),
+            array('type' => "text",'color' => 'text-blue-500'),
+            array('type' => "text",'color' => 'text-blue-600'),
+            array('type' => "text",'color' => 'text-blue-700'),
+            array('type' => "text",'color' => 'text-blue-800'),
+            array('type' => "text",'color' => 'text-blue-900'),
+            
+            array('type' => "text",'color' => 'text-indigo-50'),
+            array('type' => "text",'color' => 'text-indigo-100'),
+            array('type' => "text",'color' => 'text-indigo-200'),
+            array('type' => "text",'color' => 'text-indigo-300'),
+            array('type' => "text",'color' => 'text-indigo-400'),
+            array('type' => "text",'color' => 'text-indigo-500'),
+            array('type' => "text",'color' => 'text-indigo-600'),
+            array('type' => "text",'color' => 'text-indigo-700'),
+            array('type' => "text",'color' => 'text-indigo-800'),
+            array('type' => "text",'color' => 'text-indigo-900'),
+            
+            array('type' => "text",'color' => 'text-purple-50'),
+            array('type' => "text",'color' => 'text-purple-100'),
+            array('type' => "text",'color' => 'text-purple-200'),
+            array('type' => "text",'color' => 'text-purple-300'),
+            array('type' => "text",'color' => 'text-purple-400'),
+            array('type' => "text",'color' => 'text-purple-500'),
+            array('type' => "text",'color' => 'text-purple-600'),
+            array('type' => "text",'color' => 'text-purple-700'),
+            array('type' => "text",'color' => 'text-purple-800'),
+            array('type' => "text",'color' => 'text-purple-900'),
+            
+            array('type' => "text",'color' => 'text-pink-50'),
+            array('type' => "text",'color' => 'text-pink-100'),
+            array('type' => "text",'color' => 'text-pink-200'),
+            array('type' => "text",'color' => 'text-pink-300'),
+            array('type' => "text",'color' => 'text-pink-400'),
+            array('type' => "text",'color' => 'text-pink-500'),
+            array('type' => "text",'color' => 'text-pink-600'),
+            array('type' => "text",'color' => 'text-pink-700'),
+            array('type' => "text",'color' => 'text-pink-800'),
+            array('type' => "text",'color' => 'text-pink-900'),
+        );
+        DB::table('colors')->insert($colors);
+    }
+}
